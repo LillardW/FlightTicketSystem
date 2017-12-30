@@ -5,7 +5,7 @@ import {Button} from "react-bootstrap";
 class Login extends Component {
     render() {
         return (
-            <Button bsSize="small">Hello</Button>
+            <Button bsStyle="primary" bsSize="small">Hello</Button>
         );
     }
 }
