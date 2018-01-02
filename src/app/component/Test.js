@@ -1,9 +1,12 @@
 import React from "react";
+import {Grid} from "react-bootstrap";
 
-class Test extends React.Component{
-    render(){
+class Test extends React.Component {
+    render() {
         return (
-            <p>Hello World</p>
+            <Grid>
+                <p>Hello World</p>
+            </Grid>
         );
     }
 }
