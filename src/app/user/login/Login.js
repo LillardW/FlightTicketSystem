@@ -1,12 +1,10 @@
-import {Navbar, Nav, NavItem, Grid} from "react-bootstrap";
-import {LinkContainer} from "react-router-bootstrap";
+import {Button} from "react-bootstrap";
 
 class Login extends React.Component {
+
     render() {
         return (
-            <Grid>
-                <p>loginPage</p>
-            </Grid>
+            <Button>Login</Button>
         );
     }
 }

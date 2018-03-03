@@ -1,8 +1,8 @@
 var webpack = require('webpack');//引入Webpack模块供我们调用，这里只能使用ES5语法，使用ES6语法会报错
 var HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require("path");
-var srcPath = path.join(__dirname,"src");
-var resolveNpmPath = function(componentPath) {
+var srcPath = path.join(__dirname, "src");
+var resolveNpmPath = function (componentPath) {
     return path.join(__dirname, 'node_modules', componentPath);
 };
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -15,7 +15,7 @@ module.exports = {//注意这里是exports不是export
     },
     resolve: {
         modules: ["node_modules"],
-        extensions: [".js",".jsx",".css"],
+        extensions: [".js", ".jsx", ".css"],
         /*alias: {
             react: resolveNpmPath("/react/dist/react/dist/react.js"),
             jquery: resolveNpmPath("/jquery/dist/jquery.js"),
@@ -28,8 +28,6 @@ module.exports = {//注意这里是exports不是export
         pathinfo: true
     },
 
-
-
     module: {
         //loaders加载器
         loaders: [
@@ -41,17 +39,17 @@ module.exports = {//注意这里是exports不是export
             {
                 test: /\.css$/,
                 //exclude: /node_modules/,//屏蔽不需要处理的文件（文件夹）（可选）
-	            loader: "style-loader!css-loader"
-            }, 
+                loader: "style-loader!css-loader"
+            },
             {
                 test: /\.less$/,
                 exclude: /node_modules/,//屏蔽不需要处理的文件（文件夹）（可选）
                 loader: 'style!css!less'
             },
-            { 
-                test: /\.(png|jpg)$/, 
+            {
+                test: /\.(png|jpg)$/,
                 exclude: /node_modules/,//屏蔽不需要处理的文件（文件夹）（可选）
-                loader: 'url?limit=25000' 
+                loader: 'url?limit=25000'
             },
             {
                 test: /\.html$/,
@@ -59,7 +57,12 @@ module.exports = {//注意这里是exports不是export
                 query: {
                     minimize: true
                 }
-            }]
+            },
+            {
+                test: /\.json$/,
+                loader: "json-loader"
+            }
+        ]
     },
 
     plugins: [
@@ -72,7 +75,7 @@ module.exports = {//注意这里是exports不是export
             React: "react",
             $: "jquery",
             _: "underscore",
-            jQuery: "jquery"
+            axios: "axios"
         })
     ],
 

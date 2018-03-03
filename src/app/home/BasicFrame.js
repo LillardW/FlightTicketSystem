@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {Navbar, Nav, NavItem} from "react-bootstrap";
+import {Nav, Navbar, NavItem} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
 class BasicFrame extends React.Component {
@@ -20,6 +20,7 @@ class BasicFrame extends React.Component {
                     </LinkContainer>
                 </Nav>
                 <Nav pullRight>
+
                     <LinkContainer to="/login">
                         <NavItem>登录</NavItem>
                     </LinkContainer>
@@ -30,6 +31,7 @@ class BasicFrame extends React.Component {
             </Navbar>
         );
     }
+
 }
 
 export default BasicFrame;

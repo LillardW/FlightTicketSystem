@@ -1,0 +1,18 @@
+{
+  "showLog":true,
+  "login":true,
+  "need_cas_port":true,
+  "authorize_url" :"/oauth2.0/authorize?client_id=key&response_type=code",
+  "accessToken_url" : "/oauth2.0/accessToken",
+  "key" : "Authorization",
+  "cas_url": "http://172.25.16.102/cas-server/",
+  "callbackUrl": "http://localhost:4003/",
+  "configCenter":"http://envconf.ebaotech.com",
+  "BASE_URL": "http://localhost:8080/",
+  "PA_COMMON_URL": "http://172.25.17.213/pa/common/",
+  "PA_SERVICE_URL": "http://172.25.7.213/restlet/v1/",
+  "PARTY_SERVICE_URL": "http://localhost:10000/restlet/v1/",
+  "profile":"",
+  "application":"",
+  "label":""
+}
