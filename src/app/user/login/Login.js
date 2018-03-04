@@ -29,9 +29,9 @@ class Login extends React.Component {
                 <Grid>
                     <form>
                         <FormGroup>
-                            <ControlLabel htmlFor="userName">UserName</ControlLabel>
+                            <ControlLabel htmlFor="userName">用户名</ControlLabel>
                             <FormControl id="userName" type="text" value={this.state.userName}/>
-                            <ControlLabel htmlFor="password">Password</ControlLabel>
+                            <ControlLabel htmlFor="password">密码</ControlLabel>
                             <FormControl id="password" type="password" value={this.state.password}/>
                         </FormGroup>
                         <Button bsStyle="primary" onClick={loginAction.onClickedLogin.bind(_self)}>登录</Button>

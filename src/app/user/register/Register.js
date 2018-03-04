@@ -32,15 +32,15 @@ class Register extends React.Component {
                 <Grid>
                     <form>
                         <FormGroup>
-                            <ControlLabel htmlFor="userName">UserName</ControlLabel>
+                            <ControlLabel htmlFor="userName">用户名</ControlLabel>
                             <FormControl id="userName" type="text" value={this.state.userName}/>
-                            <ControlLabel htmlFor="password">Password</ControlLabel>
+                            <ControlLabel htmlFor="password">密码</ControlLabel>
                             <FormControl id="password" type="password" value={this.state.password}/>
                             <ControlLabel htmlFor="userEmail">Email</ControlLabel>
                             <FormControl id="userEmail" type="text" value={this.state.userEmail}/>
-                            <ControlLabel htmlFor="idNumber">ID Number</ControlLabel>
+                            <ControlLabel htmlFor="idNumber">身份证号码</ControlLabel>
                             <FormControl id="personId" type="text" value={this.state.personId}/>
-                            <ControlLabel htmlFor="name">Name</ControlLabel>
+                            <ControlLabel htmlFor="name">真实姓名</ControlLabel>
                             <FormControl id="personName" type="text" value={this.state.personName}/>
                         </FormGroup>
                         <Button bsStyle="primary" onClick={registerAction.onClickedSubmit.bind(_self)}>注册</Button>
