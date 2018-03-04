@@ -11,8 +11,9 @@ import SearchTicket from "./app/ticket/searchTicket/SearchTicket";
 ReactDom.render((
 	<BrowserRouter>
 		<div>
-			<BasicFrame/>
+			<BasicFrame />
 			<Route exact path="/" component={Test}/>
+				<Route path="/index" component={Test}/>
 				<Route path="/login" component={Login}/>
 				<Route path="/register" component={Register}/>
 				<Route path="/ticket" component={Ticket}/>

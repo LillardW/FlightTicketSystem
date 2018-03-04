@@ -1,4 +1,4 @@
-import {Button, ControlLabel, FormControl, FormGroup, Grid} from "react-bootstrap";
+import {Button, ButtonToolbar, ControlLabel, FormControl, FormGroup, Grid} from "react-bootstrap";
 import RegisterAction from "./RegisterAction";
 
 class Register extends React.Component {
@@ -43,8 +43,10 @@ class Register extends React.Component {
                             <ControlLabel htmlFor="name">真实姓名</ControlLabel>
                             <FormControl id="personName" type="text" value={this.state.personName}/>
                         </FormGroup>
-                        <Button bsStyle="primary" onClick={registerAction.onClickedSubmit.bind(_self)}>注册</Button>
-                        <Button onClick={registerAction.resetData.bind(_self)}>重置</Button>
+                        <ButtonToolbar>
+                            <Button bsStyle="primary" onClick={registerAction.onClickedSubmit.bind(_self)}>注册</Button>
+                            <Button onClick={registerAction.resetData.bind(_self)}>重置</Button>
+                        </ButtonToolbar>
                     </form>
                 </Grid>
             </div>

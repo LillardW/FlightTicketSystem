@@ -8,11 +8,11 @@ class BasicFrame extends React.Component {
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">来呀 快活呀</Link>
+                        <Link to="/index">订票系统</Link>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
-                    <LinkContainer to="/">
+                    <LinkContainer to="/index">
                         <NavItem>首页</NavItem>
                     </LinkContainer>
                     <LinkContainer to="/ticket/searchTicket">

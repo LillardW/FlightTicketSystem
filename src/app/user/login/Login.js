@@ -1,4 +1,4 @@
-import {Button, ControlLabel, FormControl, FormGroup, Grid} from "react-bootstrap";
+import {Button, ButtonToolbar, ControlLabel, FormControl, FormGroup, Grid} from "react-bootstrap";
 import LoginAction from "./LoginAction";
 
 class Login extends React.Component {
@@ -34,8 +34,10 @@ class Login extends React.Component {
                             <ControlLabel htmlFor="password">密码</ControlLabel>
                             <FormControl id="password" type="password" value={this.state.password}/>
                         </FormGroup>
-                        <Button bsStyle="primary" onClick={loginAction.onClickedLogin.bind(_self)}>登录</Button>
-                        <Button onClick={loginAction.resetData.bind(_self)}>重置</Button>
+                        <ButtonToolbar>
+                            <Button bsStyle="primary" onClick={loginAction.onClickedLogin.bind(_self)}>登录</Button>
+                            <Button onClick={loginAction.resetData.bind(_self)}>重置</Button>
+                        </ButtonToolbar>
                     </form>
                 </Grid>
             </div>
