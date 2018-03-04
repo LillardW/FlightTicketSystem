@@ -20,7 +20,6 @@ class BasicFrame extends React.Component {
                     </LinkContainer>
                 </Nav>
                 <Nav pullRight>
-
                     <LinkContainer to="/login">
                         <NavItem>登录</NavItem>
                     </LinkContainer>
